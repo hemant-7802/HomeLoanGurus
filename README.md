@@ -1,2 +1,2 @@
-# HomeLoanGuru
-First React Project
+# HomeLoanGurus
+This is my First React Project
