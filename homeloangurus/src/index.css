@@ -1,17 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&family=Tektur:wght@400..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 header{
-    height: 70vh;
-    width: 100%;
-    background: url(../public/stocks/hero.jpg) right no-repeat;
+    min-height: 90vh;
+    max-zoom: 50%;
+    background: url(../public/stocks/hero.jpg) fixed no-repeat;
     background-size: cover;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
     color: white;
+    & .bgclr{
+        min-height: 90vh;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+        & nav{
+            & h1{
+                font-family: "Salsa", cursive;
+                font-weight: 400;
+                font-style: normal;
+                & span{
+                    color: #0369a1;
+                    font-size: 45px;
+                }
+            }
+            + h1{
+                font-family: "Salsa", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
+    }
 }
-header .bgclr{
-    height: 100%;
-    width: 100%;
-    padding: 40px 150px;
-    background-color: rgba(0, 0, 0, 0.5);
+
+h1,p,button{
+    transition: .7s;
 }
+
+
+.services .icon:hover{
+    color: #0284c7;
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+.processtitle::after{
+    content: "__________";
+    display: block;
+}
+
+.footer .product
+{
+    height: 220px;
+}
+
+.footer .icon{
+    display: none;
+}
+.footer h1{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen {
+    .bgclr nav  h1{
+        margin-bottom: 1.5rem;
+    }
+    .bgclr h1{
+        margin-bottom: 1rem;
+        + p{
+            margin-bottom: 4rem;
+        }
+    }
+} /* for mobile */
+@media screen and (min-width:768px)
+{
+    .bgclr nav h1{
+        margin-bottom: 1.5rem;
+        & span{
+            font-size: 45px;
+        }
+    }
+    .bgclr h1{
+        margin-bottom: 1.5rem;
+        + p{
+            margin-bottom: 4rem;
+        }
+    }
+} /* for tablet */
+@media screen and (min-width:1024px)
+{
+    .bgclr nav h1{
+        margin-bottom: 1.5rem;
+        & span{
+            font-size: 50px;
+        }
+    }
+    .bgclr h1{
+        margin-bottom: 1.5rem;
+        + p{
+            margin-bottom: 4rem;
+        }
+    }
+} /* for laptop */
+@media screen and (min-width:1280px)
+{
+    .bgclr nav h1{
+        margin-bottom: 2.5rem;
+        & span{
+            font-size: 55px;
+        }
+    }
+    .bgclr h1{
+        margin-bottom: 2.5rem;
+        + p{
+            margin-bottom: 8rem;
+        }
+    }
+} /* for desktop */
