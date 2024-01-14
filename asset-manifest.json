@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/HomeLoanGurus/static/css/main.e53a3287.css",
+    "main.js": "/HomeLoanGurus/static/js/main.251bb2a4.js",
+    "static/media/hero.jpg": "/HomeLoanGurus/static/media/hero.e8f56f2ce80757a8cfe4.jpg",
+    "index.html": "/HomeLoanGurus/index.html",
+    "main.e53a3287.css.map": "/HomeLoanGurus/static/css/main.e53a3287.css.map",
+    "main.251bb2a4.js.map": "/HomeLoanGurus/static/js/main.251bb2a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e53a3287.css",
+    "static/js/main.251bb2a4.js"
+  ]
+}
