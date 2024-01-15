@@ -46,16 +46,23 @@ h1,p,button{
     transition: .7s;
 }
 
-
+.services .icon{
+    transition: ease-in-out .35s;
+}
 .services .icon:hover{
     color: #0284c7;
-    transform: scale(1.5);
-    transition: .5s;
+    transform: scale(1.5) rotateZ(360deg) ;
 }
 
 .processtitle::after{
     content: "__________";
     display: block;
+}
+.processchain .icon{
+    transition: ease .5s;
+}
+.processchain .icon:hover{
+    transform: rotateY(360deg);
 }
 
 .footer .product
